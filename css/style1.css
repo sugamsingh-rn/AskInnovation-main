@@ -1,0 +1,149 @@
+
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	FEATURED WORKS
+/*-----------------------------------------------------------------------------------*/
+#portfolio{
+	width:1600px;
+}
+
+.work_item {
+	position:relative;
+	transition: all 0.3s ease-in-out; 
+	-webkit-transition: all 0.3s ease-in-out;
+}
+.owl-item:hover .work_item {
+	transform:scale(0.95);
+	-o-transform:scale(0.95);
+	-ms-transform:scale(0.95);
+	-webkit-transform:scale(0.95);
+}
+
+.work_item .work_description {
+	position:absolute;
+	z-index:20;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	text-align:center;
+	opacity:0;
+	background-color:rgba(0,0,0,0.8);
+	transition: all 0.3s ease-in-out; 
+	-webkit-transition: all 0.3s ease-in-out;
+}
+.work_item:hover .work_description {opacity:1;}
+.work_item .work_description .work_descr_cont {
+	position:absolute;
+	left:0;
+	top:50%;
+	width:100%;
+	opacity:0;
+	transform:translateY(-100%);
+	-o-transform:translateY(-100%);
+	-ms-transform:translateY(-100%);
+	-webkit-transform:translateY(-100%);
+	transition: all 0.3s ease-in-out; 
+	-webkit-transition: all 0.3s ease-in-out;
+}
+.work_item:hover .work_description .work_descr_cont {
+	opacity:1;
+	transform:translateY(-50%);
+	-o-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+}
+.work_item .work_description a {
+	display:block;
+	margin:0 0 6px;
+	font-weight:300;
+	line-height:24px;
+	font-size:24px;
+	color:#fff;
+}
+.work_item .work_description span {
+	color:#666;
+}
+
+.work_item a.zoom {
+	position:absolute;
+	z-index:30;
+	left:50%;
+	bottom:0;
+	width:60px;
+	height:36px;
+	margin-left:-30px;
+	opacity:0;
+	background-image:url(../images/zoom.png);
+	background-repeat:no-repeat;
+	background-position:0 0;
+	background-size:100% auto;
+	-webkit-background-size:100% auto;
+	transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out; 
+	-webkit-transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.work_item:hover a.zoom {
+	bottom:56px;
+	opacity:1;
+}
+.work_item a.zoom:hover {background-image:url(../images/zoom_h.png);}
+
+
+
+/* __________ WORKS DETAILS __________ */
+
+
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	Portfolio Single
+/*-----------------------------------------------------------------------------------*/
+.single_page #portfolio {padding-top:50px;}
+
+
+.portfolio_block hr {border-top:2px solid #e9e9e9;}
+
+
+
+/* __________ Single Portfolio Post __________ */
+.single_portfolio_post_title {
+	padding-bottom:20px;
+	line-height:40px;
+	font-size:40px;
+	color:#333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
